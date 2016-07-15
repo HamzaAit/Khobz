@@ -1,0 +1,11 @@
+x=input("Choose an x: ")
+x=int(x)
+p=x
+def func():
+  global p
+  global x
+  p = p * (x-1)
+  x=x-1
+while x>1:
+  func()
+print(p)
