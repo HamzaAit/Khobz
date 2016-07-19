@@ -1,0 +1,13 @@
+s = input()
+
+flag = False
+
+for i in range (0, len(s)-7):
+    if s[i:i+6] == "0000000" or s[i:i+6] == "1111111":
+        flag = True
+        print("YES")
+
+
+if flag == False:
+    print("NO")
+ 
